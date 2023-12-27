@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: RGB(243 243 243);
+  color: rgb(90, 88, 88);
+  line-height: 1;
+}
+.cont {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 4.3rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.header1 {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  background: white;
+}
+@media (max-width: 25rem) {
+  .header1 {
+    width: 26rem;
+    border-radius: 2.5rem;
+  }
+  .cont {
+    width: 40rem;
+  }
+  .a1:link {
+    font-size: 1rem;
+  }
+  .p {
+    font-size: 0.4rem;
+    font-weight: normal;
+    font-display: inherit;
+  }
+  .article {
+    column-gap: 0.5rem;
+  }
+  .container1 {
+    font-size: 0.7rem;
+    width: 8rem;
+  }
+  .container2 {
+    font-size: 0.7rem;
+    width: 8rem;
+  }
+  .container3 {
+    font-size: 0.7rem;
+    width: 8rem;
+  }
+  .h22 {
+    font-size: 0.9rem;
+    margin-right: auto;
+  }
+}
+.ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+p {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.h22 {
+  font-size: 1.5rem;
+  padding: 4rem;
+  margin-bottom: 1.2rem;
+  margin: auto;
+}
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  width: 80%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  flex-wrap: wrap;
+  margin-top: -6rem;
+  margin: auto;
+}
+.container1 {
+  background-color: rgb(255 255 255);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1.6rem rgba(4, 4, 0, 0.5);
+}
+.container2 {
+  background-color: rgb(255 255 255);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.5);
+}
+.container3 {
+  background-color: rgb(255 255 255);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.5);
+}
+footer {
+  font-weight: bold;
+  color: rgb(90, 88, 88);
+  margin: auto;
+}
+.a1 {
+  text-decoration: none;
+  border-radius: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(90, 88, 88);
+  padding: 0.8rem 0.8rem 0.5rem 0.8rem;
+}
+.header1 .a1:hover {
+  transition: 0.2s;
+  color: white;
+  background-color: rgb(56, 130, 209);
+}
+.line-1 {
+  border-right: 0.2rem solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(51, 50, 50, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
